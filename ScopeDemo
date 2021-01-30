@@ -1,0 +1,18 @@
+class Main {
+  public static void main(String args[]) {
+    int x; //known to all code within main
+
+    x = 10;
+    if(x == 10) { //starting new scope
+      int y = 20; //only known to this block; but x and y still known
+      System.out.println("x and y: " + x + " " + y);
+      x = y * 2;
+    }
+
+    //y would be out of its scope here
+    // y = 100; // Error!
+    //but x is still known here
+    System.out.println("x is " + x);
+  
+  }
+}
