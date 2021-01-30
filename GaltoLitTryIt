@@ -1,0 +1,12 @@
+class Main {
+  public static void main(String[] args) {
+    double gallons; // # of gallons
+    double liters; //conversion to liters
+
+    gallons = 10; //start here with 10 gal
+
+    liters = gallons * 3.7854; //liter conversion
+
+      System.out.println(gallons + " gallons is " + liters + " liters.");
+  }
+}
